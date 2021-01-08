@@ -13,10 +13,10 @@ There are several Python libraries designed to work with Excel data, including o
 
 This example shows the use of openpyxl to read in the PBC trial balance, clean it up to be import-ready in a new tab, and save as a new file.
 ### Take an example of a trial balance formatted like this:
-![pbc tb](https://github.com/danshorstein/ficpa_article/blob/master/images/example_1/pbc_tb.png)
+![pbc tb](https://github.com/reddy-123/Extract_EXCEL_from_PDF_using_PYTHON/blob/master/images/example_1/pbc_tb.png)
 
 ### After running example_1_tb.py, the output file includes a new tab with this data:<br>
-![import tb](https://github.com/danshorstein/ficpa_article/blob/master/images/example_1/output.png)
+![import tb](https://github.com/reddy-123/Extract_EXCEL_from_PDF_using_PYTHON/blob/master/images/example_1/output.png)
 
 ## Example 2: Scraping the web
 
@@ -57,7 +57,7 @@ This is one of my new favorite tools. pdfplumber can extract text, and even iden
 This example uses the PDF file from https://www.opm.gov/policy-data-oversight/data-analysis-documentation/federal-employment-reports/reports-publications/salary-information-for-the-executive-branch.pdf
 
 ### Let's say you wanted to extract the data from this table on pg 2:
-![pdf table](https://github.com/danshorstein/ficpa_article/blob/master/images/example_3/pdf_table.png)
+![pdf table](https://github.com/reddy-123/Extract_EXCEL_from_PDF_using_PYTHON/blob/master/images/example_3/pdf_table.png)
 
 Using the Python code in example 3, the output looks like this:
-![pdf table output](https://github.com/danshorstein/ficpa_article/blob/master/images/example_3/pdf_table_csv.png)
+![pdf table output](https://github.com/reddy-123/Extract_EXCEL_from_PDF_using_PYTHON/blob/master/images/example_3/pdf_table_csv.png)
