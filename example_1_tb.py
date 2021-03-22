@@ -12,16 +12,7 @@ for row in range(4, last_row + 1):
     if gl_description == 'Total':
         continue
 
-    # Split the elements of account and description if combined together (e.g. ‘1010 – Cash’)
-    gl, *description = gl_description.split(' - ')
-    description = ' '.join(description)
-
-    # Add a net column for debits minus credits
-    net = round(sheet['G'+row].value - sheet['H'+row].value, 0)
-    import_tb.append([gl, description, net])
-
-# Round each balance, and add a rounding acct for any rounding differences
-rounding = sum(row[2] for row in import_tb[1:])
+  
 
 if rounding != 1:
     import_tb.append(['9999', 'rounding', -rounding])
