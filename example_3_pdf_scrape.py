@@ -16,7 +16,13 @@ with pdfplumber.open(path) as pdf:
 
 cleaned_table = []
 
-
+# Clean up the table data for extraction
+for row in agency_table:
+    while None in row:
+        row.remove(None)
+    while '' in row:
+        row.remove('')
+    cleaned_table.append(row)
 
 # Save the table data to csv
 headers = cleaned_table.pop(0)
